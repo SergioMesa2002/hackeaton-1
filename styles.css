@@ -1,84 +1,135 @@
 #carrito-container {
   transition: all 0.3s ease-in-out;
 }
-
-/* === Footer General === */
-footer#FooterBasket {
-    background-color: #010000;
-    color: #E1E1E1;
-    border-top: 5px solid #E73725;
-    font-family: 'Arial', sans-serif;
-    flex-wrap: wrap;
+/* FOOTER */
+footer {
+  background-color: #010000;
+  color: #E1E1E1;
+  padding: 2rem 3rem;
+  border-top: 5px solid #E73725;
+  font-family: 'Arial', sans-serif;
+  flex-wrap: wrap;
 }
-
-/* Textos lado izquierdo */
-footer#FooterBasket > div:first-child p {
-    margin: 0;
-    line-height: 1.5;
-    font-size: 0.95rem;
+footer div:first-child p {
+  margin: 0;
+  line-height: 1.5;
 }
-
-/* === Lista de autores === */
 .lista-autores ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-
 .lista-autores .equipo {
-    color: #FFFFFF;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    margin-bottom: 0.5rem;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-    font-weight: 500;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
 }
-
 .lista-autores .equipo:hover {
-    transform: scale(1.05);
-    background-color: #FFFFFF;
-    color: #E73725;
-    cursor: pointer;
+  transform: scale(1.05);
+  background-color: #FFFFFF;
+  color: #E73725;
+  cursor: pointer;
 }
-
-/* === Redes sociales === */
 .redes-sociales a {
-    color: #E73725;
-    margin-bottom: 0.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
+  color: #E73725;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .redes-sociales a:hover {
-    color: #FFFFFF;
-    transform: scale(1.2);
+  color: #FFFFFF;
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .lista-autores ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .redes-sociales {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
-/* === Responsivo === */
-@media (max-width: 768px) {
-    footer#FooterBasket {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
-        padding: 2rem 1rem;
-    }
+.container h3 {
+    font-size: 32px;
+    color: #010000;
+}
+.card-titulo {
+    font-weight: bold;
+}
 
-    .lista-autores ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-    }
+.card-texto {
+    font-size: 0.9rem;
+    color: #555;
+}
+.card-body {
+    background-color: #E1E1E1;
+}
 
-    .redes-sociales {
-        flex-direction: row !important;
-        gap: 1rem;
-        justify-content: center;
-    }
+.card-img-top {
+    height: 260px;           
+    object-fit: cover;      
+    object-position: center; 
+}
+
+.card-footer svg {
+    margin-right: 4px;
+}
+
+.tarjeta-borde {
+    border: 3px solid #E73725;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hover-card {
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.hover-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 10;
+}
+
+.hover-card:hover .hover-info {
+    display: block;
+}
+
+.btn-custom {
+    background-color: #E73725;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #ff6e5b;
+}
+
+.card {
+  min-height: 300px;  /* Aumenta o reduce según lo necesites */
+  height: 100%;
 }

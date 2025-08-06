@@ -1,55 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="styles.css" />
-    <title>Basketball E-Commerce</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Basketball E-Commerce</title>
 </head>
 <body>
-    
-    <div class="container">
-        <h2>Catalogo</h2>
-
-        <button id="btn-toggle-carrito" class="btn btn-primary mb-3">🛒 Ver carrito</button>
-
-        <div class="row" id="productos">
-    
+  <div class="container my-5">
+    <button id="btn-toggle-carrito" class="btn btn-primary mb-3">🛒 Ver carrito</button>
+    <div class="row" id="productos">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/balonnba.webp" class="card-img-top" alt="Balon NBA">
+          <div class="card-body">
+            <h5 class="card-title">Balón NBA</h5>
+            <p class="card-text">Balón profesional oficial NBA.</p>
+            <p class="card-text fw-bold">$120.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Balón NBA" 
+              data-price="120000" 
+              data-image="assets/balonnba.webp">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.8
+                    </div>
+                </div>
+          </div>
         </div>
-    
-        <div id="carrito-container">
-            <h3>Carrito 🛒 <span id="cantidad-carrito">0</span></h3>
-            <ul id="lista-carrito"></ul>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/Camiseta_Lakers.jpg" class="card-img-top" alt="Camiseta Lakers">
+          <div class="card-body">
+            <h5 class="card-title">Camiseta Lakers</h5>
+            <p class="card-text">Camiseta oficial del equipo de los lakers.</p>
+            <p class="card-text fw-bold">$220.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Camiseta Lakers" 
+              data-price="220000" 
+              data-image="assets/Camiseta_Lakers.jpg">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.5
+                    </div>
+                </div>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/pantalonetalakers.webp" class="card-img-top" alt="Pantaloneta Lakers">
+          <div class="card-body">
+            <h5 class="card-title">Pantaloneta Lakers</h5>
+            <p class="card-text">Pantaloneta oficial del equipo de los lakers.</p>
+            <p class="card-text fw-bold">$150.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Pantaloneta Lakers" 
+              data-price="150000" 
+              data-image="assets/pantalonetalakers.webp">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.6
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/manga.jpg" class="card-img-top" alt="Manga">
+          <div class="card-body">
+            <h5 class="card-title">Manga de baloncesto NBA</h5>
+            <p class="card-text">Manga de baloncesto oficial de la NBA.</p>
+            <p class="card-text fw-bold">$80.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Manga NBA" 
+              data-price="80000" 
+              data-image="assets/manga.jpg">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.9
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/tableropared.jpg" class="card-img-top" alt="Tablero">
+          <div class="card-body">
+            <h5 class="card-title">Tablero de pared</h5>
+            <p class="card-text">Tablero de baloncesto para ajustar en la pared.</p>
+            <p class="card-text fw-bold">$280.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Tablero Pared" 
+              data-price="280000" 
+              data-image="assets/manga.jpg">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.7
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/camisetabulls.png" class="card-img-top" alt="Camiseta Bulls">
+          <div class="card-body">
+            <h5 class="card-title">Camiseta Bulls de Chicago</h5>
+            <p class="card-text">Camitea oficial del equipo de los Bulls de Chicago.</p>
+            <p class="card-text fw-bold">$220.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Camiseta Bulls" 
+              data-price="220000" 
+              data-image="assets/camisetabulls.png">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.5
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/zapatos.jpg" class="card-img-top" alt="Zapatos">
+          <div class="card-body">
+            <h5 class="card-title">Zapatos baloncesto</h5>
+            <p class="card-text">Zapatos baloncesto ideales para entrenamiento.</p>
+            <p class="card-text fw-bold">$320.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Zapatos baloncesto" 
+              data-price="320000" 
+              data-image="assets/zapatos.png">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.4
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/camisetabaloncesto.jpg" class="card-img-top" alt="Camiseta Baloncesto">
+          <div class="card-body">
+            <h5 class="card-title">Camiseta esqueleto baloncesto</h5>
+            <p class="card-text">Camiseta de baloncesto para entrenamiento.</p>
+            <p class="card-text fw-bold">$70.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Camiseta baloncesto" 
+              data-price="70000" 
+              data-image="assets/camisetabaloncesto.jpg">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.9
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/pantalonetabaloncesto.png" class="card-img-top" alt="Pantaloneta Baloncesto">
+          <div class="card-body">
+            <h5 class="card-title">Pantalonet baloncesto</h5>
+            <p class="card-text">Pantaloneta de baloncesto para entrenamiento.</p>
+            <p class="card-text fw-bold">$50.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Pantaloneta baloncesto" 
+              data-price="50000" 
+              data-image="assets/pantalonetabaloncesto.png">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.1
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/tablero.webp" class="card-img-top" alt="Tablero2 Baloncesto">
+          <div class="card-body">
+            <h5 class="card-title">Tablero desplegable</h5>
+            <p class="card-text">Tablero de baloncesto para zonas abiertas.</p>
+            <p class="card-text fw-bold">$350.000</p>
+            <button 
+              class="btn btn-sm btn-custom add-to-cart" 
+              data-name="Tablero desplegable baloncesto" 
+              data-price="350000" 
+              data-image="assets/tablero.webp">
+              Agregar al carrito
+            </button>
+                <div class="card-footer bg-white border-0">
+                    <div class="text-start text-warning">
+                        ★ 4.5
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <!-- Puedes duplicar esta tarjeta para más productos -->
     </div>
 
+    <div id="carrito-container" class="mt-5 d-none">
+      <h3>🛒 Carrito (<span id="cantidad-carrito">0</span> items)</h3>
+      <ul id="lista-carrito" class="list-group"></ul>
+      <div class="carrito-total">
+        <h6>Total: $<span id="total-precio">0</span></h6>
+      </div>
+    </div>
+  </div>
 
-    <!--! Pie de página -->
+  <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5" id="FooterBasket">
+    <div>
+      <p>&copy; BASKETBALL E-COMMERCE</p>
+      <p>Todos los derechos reservados.</p>
+    </div>
+    <div class="lista-autores d-flex">
+      <ul>
+        <li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li>
+        <li class="equipo m-lg-2 p-lg-2">Diana Carolina</li>
+        <li class="equipo m-lg-2 p-lg-2">Sergio Mesa</li>
+        <li class="equipo m-lg-2 p-lg-2">Pimienta Angel</li>
+      </ul>
+    </div>
+    <div class="redes-sociales d-flex flex-column">
+      <a href="https://github.com/SergioMesa2002/hackeaton-1.git"><i class="bi bi-github fs-1"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+    </div>
+  </footer>
 
-    <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5" id="FooterBasket">
-        <!--! mt:margin top , pt:padding-top, pb:padding bottom, px: padding horizontal-->
-        <div>
-            <p>&copy; BASKETBALL E-COMMERCE</p>
-            <p>Todos los derechos reservados.</p>
-        </div>
-        <div class="lista-autores d-flex">
-            <ul class="">
-                <!--! m: margin , lg: large p:padding-->
-                <!--! Aplica un padding y un margen en todos lados para cuando la pantalla es grande-->
-                <li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li>
-                <li class="equipo m-lg-2 p-lg-2">Diana Carolina</li>
-                <li class="equipo m-lg-2 p-lg-2">Sergio Mesa</li>
-                <li class="equipo m-lg-2 p-lg-2">Pimienta Angel</li>
-            </ul>
-        </div>
-        <div class="redes-sociales d-flex flex-column">
-            <a href="https://github.com/SergioMesa2002/hackeaton-1.git"><i class="bi bi-github fs-1"></i></a>
-            <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
