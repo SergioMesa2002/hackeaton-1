@@ -1,0 +1,62 @@
+.balon {
+    max-height: 100px;
+}
+
+.navbar {
+    background-color: #010000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #E73725;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+  
+.nav-d, .nav-i {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.logo:hover{
+    color: #E73725;
+
+}
+
+.nav-d a, .nav-i a {
+    text-decoration: none;
+    color: #E1E1E1;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-d a:hover, .nav-i a:hover {
+    color: #E73725;
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.balon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.3rem;
+    transition: transform 0.5s ease;
+}
+
+
+.balon:hover {
+    transform: rotate(360deg);  
+}
