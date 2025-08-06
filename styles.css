@@ -1,37 +1,44 @@
-/* Estilos generales para el footer */
-footer {
+#carrito-container {
+  transition: all 0.3s ease-in-out;
+}
+
+/* === Footer General === */
+footer#FooterBasket {
     background-color: #010000;
     color: #E1E1E1;
-    padding: 2rem 3rem;
     border-top: 5px solid #E73725;
     font-family: 'Arial', sans-serif;
     flex-wrap: wrap;
 }
 
-/* Estilo para los textos del lado izquierdo */
-footer div:first-child p {
+/* Textos lado izquierdo */
+footer#FooterBasket > div:first-child p {
     margin: 0;
     line-height: 1.5;
+    font-size: 0.95rem;
 }
 
-/* Estilo para la lista de autores */
+/* === Lista de autores === */
 .lista-autores ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .lista-autores .equipo {
     color: #FFFFFF;
+    background-color: transparent;
     border-radius: 10px;
+    padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     text-align: center;
+    font-weight: 500;
 }
 
-/* Efecto hover en autores */
 .lista-autores .equipo:hover {
     transform: scale(1.05);
     background-color: #FFFFFF;
@@ -39,36 +46,39 @@ footer div:first-child p {
     cursor: pointer;
 }
 
-/* Redes sociales (iconos) */
+/* === Redes sociales === */
 .redes-sociales a {
     color: #E73725;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
 }
 
-/* Hover en iconos */
 .redes-sociales a:hover {
     color: #FFFFFF;
     transform: scale(1.2);
 }
 
-/* Responsivo */
+/* === Responsivo === */
 @media (max-width: 768px) {
-    footer {
+    footer#FooterBasket {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
-        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
     }
 
     .lista-autores ul {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0.5rem;
+        justify-content: center;
     }
 
     .redes-sociales {
-        flex-direction: row;
+        flex-direction: row !important;
         gap: 1rem;
+        justify-content: center;
     }
 }
