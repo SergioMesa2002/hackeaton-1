@@ -40,27 +40,27 @@ function actualizarCarrito() {
     totalPrecio += item.precio * item.cantidad;
 
     const li = document.createElement('li');
-    li.className = 'list-group-item d-flex justify-content-between align-items-center';
+    li.className = 'carrito-item';
 
     li.innerHTML = `
-      <div>
-        <strong>${item.nombre}</strong><br>
-        <small>Cantidad: ${item.cantidad}</small>
+      <div class="carrito-item-header">
+        <strong>${item.nombre}</strong>
+        <button class="btn btn-sm btn-eliminar btn-ecustom" onclick="eliminarProducto(${index})">❌</button>
       </div>
-      <div>
-        <button class="btn btn-sm btn-success me-2" onclick="cambiarCantidad(${index}, 1)">+</button>
-        <button class="btn btn-sm btn-warning me-2" onclick="cambiarCantidad(${index}, -1)">-</button>
-        <button class="btn btn-sm btn-danger" onclick="eliminarProducto(${index})">Eliminar</button>
+      <div class="carrito-item-cantidad">
+        <button class="btn btn-sm btn-restar" onclick="cambiarCantidad(${index}, -1)">-</button>
+        <span>${item.cantidad}</span>
+        <button class="btn btn-sm btn-agregar" onclick="cambiarCantidad(${index}, 1)">+</button>
       </div>
     `;
+
     listaCarrito.appendChild(li);
   });
 
   cantidadCarrito.textContent = totalItems;
 
-  // 👇 Mostrar total de precios
   const totalPrecioElement = document.getElementById('total-precio');
-  totalPrecioElement.textContent = totalPrecio.toFixed(2);
+  totalPrecioElement.textContent = totalPrecio;
 }
 
   window.cambiarCantidad = (index, cambio) => {

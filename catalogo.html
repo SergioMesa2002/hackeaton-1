@@ -3,218 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="catalogo.css">
-    <title>Catalogo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>BasketZone 🏀</title>
 </head>
 <body>
-    <div class="encabezado">
+    <header>
+        <nav class="navbar">
+        <div class="nav-d">
+            <a href="#banner">Inicio</a>
+        </div>
+
+        <a class="logo" href="index.html">
+            <img class="balon" src="assets/balon.png" alt="Basketball Logo">
+            BasketZone
+        </a>
+
+        <div class="nav-i">
+            <a href="#catalogo">Tienda</a>
+        </div>
+    </nav>
+
+    </header>
+    <section class="banner" id="banner">
+        <video class="banner-video" autoplay muted loop playsinline>
+            <source src="./assets/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="banner-content">
+            <h1 class="banner-title">BASKETZONE</h1>
+            <p class="banner-subtitle">Tu destino para el mejor equipamiento deportivo</p>
+            <a href="#catalogo" class="banner-cta">Explorar Productos</a>
+        </div>
+    </section>
+
+    <section class="catalogo" id="catalogo">
+        <div class="container py-5">
+            <h3 class="text-center mb-4">Explora nuestros productos</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/balonnba.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Balón NBA</h6>
+                        <p class="card-texto text-start">Balón oficial de la NBA. Excelente para partidos y entrenamiento.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.8
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/balonnba.webp" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Balón NBA</h6>
+                        <p>$120.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Balón NBA" data-price="120000" data-image="assets/balonnba.webp">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/Camiseta_Lakers.jpg" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Camiseta Lakers</h6>
+                        <p class="card-texto text-start">Camiseta oficial del equipo de los Lakers.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.5
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/Camiseta_Lakers.jpg" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Camiseta Lakers</h6>
+                        <p>$220.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Camiseta Lakers" data-price="220000" data-image="assets/Camiseta_Lakers.jpg">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/pantalonetalakers.webp" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Pantaloneta Lakers</h6>
+                        <p class="card-texto text-start">Pantaloneta oficial del equipo de los Lakers.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.6
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/pantalonetalakers.webp" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Pantaloneta Lakers</h6>
+                        <p>$150.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Pantaloneta Lakers" data-price="150000" data-image="assets/pantalonetalakers.webp">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/manga.jpg" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Manga de baloncesto NBA</h6>
+                        <p class="card-texto text-start">Manga de baloncesto oficial de la NBA.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.9
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/manga.jpg" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Manga de baloncesto NBA</h6>
+                        <p>$80.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Manga de baloncesto NBA" data-price="80000" data-image="assets/manga.jpg">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/tableropared.jpg" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Tablero de pared</h6>
+                        <p class="card-texto text-start">Tablero de baloncesto para ajustar en la pared.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.7
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/tableropared.jpg" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Tablero de pared</h6>
+                        <p>$280.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Tablero de pared" data-price="280000" data-image="assets/tableropared.jpg">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/camisetabulls.png" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Camiseta Bulls de Chicago</h6>
+                        <p class="card-texto text-start">Camiseta oficial del equipo de los Bulls de Chicago.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.5
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/camisetabulls.png" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Camiseta Bulls de Chicago</h6>
+                        <p>$220.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Camiseta Bulls de Chicago" data-price="220000" data-image="assets/camisetabulls.png">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/zapatos.jpg" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Zapatos baloncesto</h6>
+                        <p class="card-texto text-start">Zapatos baloncesto ideales para entrenamiento.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.4
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/zapatos.jpg" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Zapatos baloncesto</h6>
+                        <p>$320.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Zapatos baloncesto" data-price="320000" data-image="assets/zapatos.jpg">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/camisetabaloncesto.jpg" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Camiseta esqueleto baloncesto</h6>
+                        <p class="card-texto text-start">Camiseta de baloncesto para entrenamiento.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.9
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/camisetabaloncesto.jpg" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Camiseta esqueleto baloncesto</h6>
+                        <p>$70.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Camiseta esqueleto baloncesto" data-price="70000" data-image="assets/camisetabaloncesto.jpg">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/pantalonetabaloncesto.png" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Pantaloneta baloncesto</h6>
+                        <p class="card-texto text-start">Pantaloneta de baloncesto para entrenamiento.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.1
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/pantalonetabaloncesto.png" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Pantaloneta baloncesto</h6>
+                        <p>$50.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Pantaloneta baloncesto" data-price="50000" data-image="assets/pantalonetabaloncesto.png">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 tarjeta-borde position-relative hover-card">
+                    <img src="assets/tablero.webp" class="card-img-top" alt="Balón NBA">
+                    <div class="card-body">
+                        <h6 class="card-titulo text-start">Tablero desplegable</h6>
+                        <p class="card-texto text-start">Tablero de baloncesto para zonas abiertas.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="text-start text-warning">
+                            ★ 4.5
+                        </div>
+                    </div>
+                    <div class="hover-info p-3 rounded shadow">
+                        <img src="assets/tablero.webp" class="img-fluid rounded mb-2" alt="Preview">
+                        <h6 class="text-start">Tablero desplegable</h6>
+                        <p>$350.000</p>
+                        <button class="btn btn-sm btn-custom add-to-cart" data-name="Tablero desplegable" data-price="350000" data-image="assets/tablero.webp">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="btn-toggle-carrito" class="btn btn-ccustom position-fixed bottom-0 end-0 m-4">🛒 Ver carrito <span id="cantidad-carrito" class="badge bg-white text-danger">0</span></button>
+
+    <div id="carrito-container" class="position-fixed bottom-0 end-0 bg-white shadow p-3 m-4 d-none">
+        <h5 class="mb-3">Carrito de compras</h5>
+        <ul id="lista-carrito" class="list-group mb-3"></ul>
+        <p>Total: $<span id="total-precio">0</span></p>
     </div>
-    <div class="container py-5">
-        <h3 class="text-center mb-4">Explora nuestros productos</h3>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+    <footer class="d-flex justify-content-between align-items-center mt-5 pt-5 pb-2 px-5" id="FooterBasket">
+        <div>
+            <p>&copy; BASKETZONE</p>
+            <p>Todos los derechos reservados.</p>
+            <div class="redes-sociales d-flex flex-row">
+            <a href="https://github.com/SergioMesa2002/hackeaton-1.git"><i class="bi bi-github fs-1"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+        </div>
+        </div>
+        <div class="lista-autores d-flex">
+        <ul>
+            <li class="equipo m-lg-2 p-lg-2">Andrés Alfonso</li>
+            <li class="equipo m-lg-2 p-lg-2">Diana Carolina</li>
+            <li class="equipo m-lg-2 p-lg-2">Sergio Mesa</li>
+            <li class="equipo m-lg-2 p-lg-2">Pimienta Angel</li>
+        </ul>
+        </div>
         
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/balonnba.webp" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Balón NBA</h6>
-                    <p class="card-texto text-start">Balón oficial de la NBA. Excelente para partidos y entrenamiento.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.8
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/balonnba.webp" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Balón NBA</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/Camiseta_Lakers.jpg" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Camiseta Lakers</h6>
-                    <p class="card-texto text-start">Camiseta oficial del equipo de los Lakers.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.5
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/Camiseta_Lakers.jpg" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Camiseta Lakers</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/pantalonetalakers.webp" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Pantaloneta Lakers</h6>
-                    <p class="card-texto text-start">Pantaloneta oficial del equipo de los Lakers.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.6
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/pantalonetalakers.webp" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Pantaloneta Lakers</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/manga.jpg" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Manga de baloncesto NBA</h6>
-                    <p class="card-texto text-start">Manga de baloncesto oficial de la NBA.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.9
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/manga.jpg" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Manga de baloncesto NBA</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/tableropared.jpg" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Tablero de pared</h6>
-                    <p class="card-texto text-start">Tablero de baloncesto para ajustar en la pared.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.7
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/tableropared.jpg" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Tablero de pared</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/camisetabulls.png" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Camiseta Bulls de Chicago</h6>
-                    <p class="card-texto text-start">Camiseta oficial del equipo de los Bulls de Chicago.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.5
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/camisetabulls.png" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Camiseta Bulls de Chicago</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/zapatos.jpg" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Zapatos baloncesto</h6>
-                    <p class="card-texto text-start">Zapatos baloncesto ideales para entrenamiento.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.4
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/zapatos.jpg" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Zapatos baloncesto</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/camisetabaloncesto.jpg" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Camiseta esqueleto baloncesto</h6>
-                    <p class="card-texto text-start">Camiseta de baloncesto para entrenamiento.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.9
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/camisetabaloncesto.jpg" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Camiseta esqueleto baloncesto</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/pantalonetabaloncesto.png" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Pantaloneta baloncesto</h6>
-                    <p class="card-texto text-start">Pantaloneta de baloncesto para entrenamiento.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.1
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/pantalonetabaloncesto.png" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Pantaloneta baloncesto</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 tarjeta-borde position-relative hover-card">
-                <img src="assets/tablero.webp" class="card-img-top" alt="Balón NBA">
-                <div class="card-body">
-                    <h6 class="card-titulo text-start">Tablero desplegable</h6>
-                    <p class="card-texto text-start">Tablero de baloncesto para zonas abiertas.</p>
-                </div>
-                <div class="card-footer bg-white border-0">
-                    <div class="text-start text-warning">
-                        ★ 4.5
-                    </div>
-                </div>
-                <div class="hover-info p-3 rounded shadow">
-                    <img src="assets/tablero.webp" class="img-fluid rounded mb-2" alt="Preview">
-                    <h6 class="text-start">Tablero desplegable</h6>
-                    <button class="btn btn-sm btn-custom">Agregar al carrito</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 </html>
