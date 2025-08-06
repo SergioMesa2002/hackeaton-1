@@ -133,3 +133,114 @@ footer div:first-child p {
   min-height: 300px;  /* Aumenta o reduce según lo necesites */
   height: 100%;
 }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            position: relative;
+            height: 70vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 190%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        .banner-content {
+            text-align: center;
+            color: rgb(252, 246, 246);
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .banner-title {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, #b84949, #410202, #d80909);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite;
+        }
+
+        .banner-subtitle {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .banner-cta {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #df1727, #ffffff);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .banner-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(170, 95, 68, 0.6);
+            background: linear-gradient(45deg, #291dcc, #ff6b35);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
