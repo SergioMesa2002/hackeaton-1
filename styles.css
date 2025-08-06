@@ -51,7 +51,7 @@
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
             font-family: 'Arial', sans-serif;
             letter-spacing: 3px;
-            background: linear-gradient(45deg, #b84949, #410202, #d80909);
+            background: linear-gradient(45deg, #e73725, #e73725, #e73725);
             background-size: 300% 300%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -110,6 +110,51 @@
             }
         }
 
-       
-        
+        .catalogo-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 40px;
+}
+
+.producto-card {
+  flex: 0 0 auto;
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+}
+
+.producto-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.agregar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.agregar :hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
     
